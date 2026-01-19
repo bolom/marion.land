@@ -9,11 +9,11 @@ export const PROJECTS: Project[] = [
     year: '2026',
     description: 'Conception d\'un espace hybride entre halle de marché et lieu de vie bioclimatique.',
     images: [
-      '/src/assets/images/IMG_3041.HEIC',
-      '/src/assets/images/chantier-projet-eape1.png',
-      '/src/assets/images/chantier-projet-etape-2.png'
+      '/images/halle-viviante/IMG_3041.HEIC',
+      '/images/halle-viviante/chantier-projet-eape1.png',
+      '/images/halle-viviante/chantier-projet-etape-2.png'
     ],
-    externalLink: 'https://hallevivante.land'
+    externalLink: 'https://halle-vivante.land'
   },
   {
     id: 'vegetaux',
@@ -22,13 +22,13 @@ export const PROJECTS: Project[] = [
     year: '2023',
     description: 'Inventaire graphique et sensible de la flore locale.',
     images: [
-      '/src/assets/images/vegetaux/plantouz1_670.jpg',
-      '/src/assets/images/vegetaux/plantouz2_670.jpg',
-      '/src/assets/images/vegetaux/triptilok_670.jpg',
-      '/src/assets/images/vegetaux/palmiers_670.jpg',
-      '/src/assets/images/vegetaux/le-jardin-de-Thuret_670.jpg',
-      '/src/assets/images/vegetaux/escalier-jardin-exotique-cabane-rouge_670.png',
-      '/src/assets/images/vegetaux/de-ouf3_670.png'
+      '/images/vegetaux/plantouz1_670.jpg',
+      '/images/vegetaux/plantouz2_670.jpg',
+      '/images/vegetaux/triptilok_670.jpg',
+      '/images/vegetaux/palmiers_670.jpg',
+      '/images/vegetaux/le-jardin-de-Thuret_670.jpg',
+      '/images/vegetaux/escalier-jardin-exotique-cabane-rouge_670.png',
+      '/images/vegetaux/de-ouf3_670.png'
     ]
   },
   {
@@ -38,20 +38,20 @@ export const PROJECTS: Project[] = [
     year: '2023',
     description: 'Récits visuels d\'itinérance à travers les paysages ruraux.',
     images: [
-      '/src/assets/images/voyage/belle-ile-medley_670.jpg',
-      '/src/assets/images/voyage/samzun_670.jpg',
-      '/src/assets/images/voyage/corse_670.jpg',
-      '/src/assets/images/voyage/doubs_670.jpg',
-      '/src/assets/images/voyage/premier-regards_670.jpg',
-      '/src/assets/images/voyage/vosges_670.jpg',
-      '/src/assets/images/voyage/mditeranne_670.jpg',
-      '/src/assets/images/voyage/pypy2_670.jpg',
-      '/src/assets/images/voyage/ecosse_670.jpg',
-      '/src/assets/images/voyage/irlande-du-nord_670.jpg',
-      '/src/assets/images/voyage/Inde-1_670.jpg',
-      '/src/assets/images/voyage/inde-2_670.jpg',
-      '/src/assets/images/voyage/slovaquie_670.jpg',
-      '/src/assets/images/voyage/mexik2_670.jpg'
+      '/images/voyage/belle-ile-medley_670.jpg',
+      '/images/voyage/samzun_670.jpg',
+      '/images/voyage/corse_670.jpg',
+      '/images/voyage/doubs_670.jpg',
+      '/images/voyage/premier-regards_670.jpg',
+      '/images/voyage/vosges_670.jpg',
+      '/images/voyage/mditeranne_670.jpg',
+      '/images/voyage/pypy2_670.jpg',
+      '/images/voyage/ecosse_670.jpg',
+      '/images/voyage/irlande-du-nord_670.jpg',
+      '/images/voyage/Inde-1_670.jpg',
+      '/images/voyage/inde-2_670.jpg',
+      '/images/voyage/slovaquie_670.jpg',
+      '/images/voyage/mexik2_670.jpg'
     ]
   },
   {
@@ -61,14 +61,14 @@ export const PROJECTS: Project[] = [
     year: '2023',
     description: 'Installation artistique explorant les strates mémorielles d\'un lieu.',
     images: [
-      '/src/assets/images/margival/tischet-des-combes_670.jpg',
-      '/src/assets/images/margival/dessin1re-imp-copie_630.jpg',
-      '/src/assets/images/margival/TABLE-DESSIN-MARGIVAL-_630.jpg',
-      '/src/assets/images/margival/carte-sens-copie_665.jpg',
-      '/src/assets/images/margival/axo-entireoo_670.jpg',
-      '/src/assets/images/margival/trois-margioo_630.jpg',
-      '/src/assets/images/margival/master-plan-web_670.png',
-      '/src/assets/images/margival/vue-toit-tischetok_630.jpg'
+      '/images/margival/tischet-des-combes_670.jpg',
+      '/images/margival/dessin1re-imp-copie_630.jpg',
+      '/images/margival/TABLE-DESSIN-MARGIVAL-_630.jpg',
+      '/images/margival/carte-sens-copie_665.jpg',
+      '/images/margival/axo-entireoo_670.jpg',
+      '/images/margival/trois-margioo_630.jpg',
+      '/images/margival/master-plan-web_670.png',
+      '/images/margival/vue-toit-tischetok_630.jpg'
     ]
   },
   {
@@ -78,11 +78,11 @@ export const PROJECTS: Project[] = [
     year: '2022',
     description: 'Représentations subjectives du territoire par le dessin et l\'émotion.',
     images: [
-      '/src/assets/images/cartographie-sensible/carte-sensible-blois_670.jpg',
-      '/src/assets/images/cartographie-sensible/blois-loire_670.jpg',
-      '/src/assets/images/cartographie-sensible/muides_670.jpg',
-      '/src/assets/images/cartographie-sensible/coupe-de-la-mort-copie_670.jpg',
-      '/src/assets/images/cartographie-sensible/photo-st-omer_670.jpg'
+      '/images/cartographie-sensible/carte-sensible-blois_670.jpg',
+      '/images/cartographie-sensible/blois-loire_670.jpg',
+      '/images/cartographie-sensible/muides_670.jpg',
+      '/images/cartographie-sensible/coupe-de-la-mort-copie_670.jpg',
+      '/images/cartographie-sensible/photo-st-omer_670.jpg'
     ]
   },
   {
@@ -92,11 +92,11 @@ export const PROJECTS: Project[] = [
     year: '2021',
     description: 'Projet de fournil mobile et de panification itinérante.',
     images: [
-      '/src/assets/images/boulenc-cheminotte/fournil-villeneuve_670.jpg',
-      '/src/assets/images/boulenc-cheminotte/fenetre-amap_670.jpg',
-      '/src/assets/images/boulenc-cheminotte/boulenco_670.jpg',
-      '/src/assets/images/boulenc-cheminotte/mise-en-place-esthetique2_670.jpg',
-      '/src/assets/images/boulenc-cheminotte/48378240_307118563237367_7343309704291942400_n_670.jpg'
+      '/images/boulenc-cheminotte/fournil-villeneuve_670.jpg',
+      '/images/boulenc-cheminotte/fenetre-amap_670.jpg',
+      '/images/boulenc-cheminotte/boulenco_670.jpg',
+      '/images/boulenc-cheminotte/mise-en-place-esthetique2_670.jpg',
+      '/images/boulenc-cheminotte/48378240_307118563237367_7343309704291942400_n_670.jpg'
     ]
   },
   {
