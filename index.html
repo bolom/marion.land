@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marion | Paysagiste & Boulangère</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200;12..96,800&family=Fira+Code:wght@300;500&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Bricolage Grotesque', 'sans-serif'],
+              mono: ['Fira Code', 'monospace'],
+              serif: ['Playfair Display', 'serif'],
+            },
+            colors: {
+              paper: '#f9f7f2',
+              clay: {
+                light: '#e6ded3',
+                mid: '#d4c4b5',
+                dark: '#7c6d62',
+              },
+              earth: '#1a1816',
+              accent: '#b45309',
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+              'slow-spin': 'spin 20s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-20px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      ::selection { background: #b45309; color: white; }
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #f9f7f2; }
+      ::-webkit-scrollbar-thumb { background: #d4c4b5; }
+      
+      .grain-overlay {
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.12;
+      }
+      
+      body {
+        cursor: none;
+      }
+      
+      .custom-cursor {
+        width: 12px;
+        height: 12px;
+        background: #b45309;
+        border-radius: 50%;
+        position: fixed;
+        pointer-events: none;
+        z-index: 10000;
+        transition: transform 0.1s ease-out;
+      }
+
+      .text-outline {
+        -webkit-text-stroke: 1px #1a1816;
+        color: transparent;
+      }
+
+      .reveal-img {
+        clip-path: inset(100% 0 0 0);
+        transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+      .reveal-img.active {
+        clip-path: inset(0 0 0 0);
+      }
+    </style>
+
+<link rel="stylesheet" href="/index.css">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-tEPsUsv9.js"></script>
+</head>
+<body class="bg-paper text-earth overflow-x-hidden">
+    <div id="cursor" class="custom-cursor"></div>
+    <svg class="grain-overlay" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <filter id="noise">
+          <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch" />
+          <feColorMatrix type="saturate" values="0"/>
+      </filter>
+      <rect width="100%" height="100%" filter="url(#noise)" />
+    </svg>
+    <div id="root"></div>
+
+    <script>
+      const cursor = document.getElementById('cursor');
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.transform = `translate(${e.clientX - 6}px, ${e.clientY - 6}px)`;
+      });
+      document.addEventListener('mousedown', () => cursor.style.transform += ' scale(2)');
+      document.addEventListener('mouseup', () => cursor.style.transform = cursor.style.transform.replace(' scale(2)', ''));
+    </script>
+</body>
+</html>
