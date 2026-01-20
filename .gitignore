@@ -1,34 +1,590 @@
-# Built things
-_Debug/
-Compiled/
-
-# AudioCache can be rebuilt from sources
-AudioCache/
-
-# Lockfile
-_OpenInEditor.lock
-
-# User settings
-Game.agf.user
-*.crm.user
-
-# Backups
-Game.agf.bak
-backup_acsprset.spr
-
-# Memory dumps
-*.dmp
-
-# Temporary files
-# temporarily created during sprite or room background compression
-~aclzw.tmp
-# temporary, main game data, before getting packed into exe
-game28.dta
-# temporary build of the game before being moved to Compiled/ folder
-*.exe
-
-# Log files
-warnings.log
-
 # Dependencies
 node_modules/
+
+# Environment variables
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# TypeScript v1 declaration files
+typings/
+
+# System Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.directory
+.Trashes
+
+# Editor files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/*
+*.swp
+*.swo
+*~
+.vs/
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Temporary files
+tmp/
+temp/
+.DS_Store
+*.tmp
+*.temp
+*.bak
+*.cache
+*.swp
+
+# Compiled JavaScript
+*.js.map
+*.jsx.map
+*.ts.map
+*.tsx.map
+
+# Package manager caches
+npm/
+node_modules/
+jspm/
+jspm_packages/
+bower_components/
+vendor/
+
+# Testing
+coverage/
+.nyc_output/
+.jest/
+jest/
+
+# Production builds
+public/dist/
+publish/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Runtime
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Vue.js
+dist/
+dist-ssr/
+*.vuepress/dist
+
+# Electron
+release/
+dist_electron/
+
+# Cordova
+platforms/
+plugins/
+www/
+
+# Ionic
+ionic/www/
+
+# React Native
+node_modules/
+ios/
+android/
+*.apk
+*.aab
+
+# PhoneGap
+phonegap/www/
+
+# Cordova
+cordova/platforms/
+cordova/plugins/
+
+# Electron
+electron/renderer/
+electron/main/
+electron-builder.json
+
+# Database
+*.db
+*.db-journal
+
+# Backup & temp files
+*~
+*.bak
+*.swp
+*.tmp
+*.temp
+*.cache
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+nbproject/
+*.tmproj
+*.xcworkspace
+xcuserdata/
+
+# Testing
+coverage/
+.nyc_output/
+.jest/
+jest/
+
+# CI
+.semaphore/
+
+# Docker
+.dockerignore
+docker-compose.yml
+docker/
+
+# Heroku
+.htaccess
+
+# AWS
+.aws/
+
+# Firebase
+.firebase/
+firepit/
+
+# Vercel
+.vercel/
+
+# Netlify
+.netlify/
+
+# Sentry
+.sentryclirc
+
+# ESLint
+eslintcache
+
+# Prettier
+prettierignore
+
+# Babel
+babel.cache.js
+
+# Webpack
+webpack.config.js
+webpack.config.babel.js
+webpack.config.dev.js
+webpack.config.prod.js
+webpack.config.test.js
+webpack.config.base.js
+webpack.config.common.js
+webpack.config.dev.babel.js
+webpack.config.prod.babel.js
+webpack.config.dll.js
+webpack.config.dll.babel.js
+webpack-stats.json
+
+# Rollup
+rollup.config.js
+rollup.config.babel.js
+rollup.config.dev.js
+rollup.config.prod.js
+rollup.config.test.js
+rollup.config.base.js
+rollup.config.common.js
+rollup.config.dev.babel.js
+rollup.config.prod.babel.js
+rollup.config.dll.js
+rollup.config.dll.babel.js
+
+# Parcel
+.cache/
+.dist/
+.dist-eleventy.js
+
+# Browser sync
+.browser-sync-client/
+.browser-sync-static/
+.browser-sync-templates/
+.browser-sync/
+bs-config.json
+bs-config.js
+
+# Vite
+.vite/
+
+# Snowpack
+.snowpack/
+
+# Gatsby
+.cache/
+public/
+
+# Angular
+.angular/
+
+# Ember
+.ember-cli
+.ember-local-cli
+
+# Meteor
+.meteor/local/
+
+# Laravel
+vendor/
+
+# Symfony
+vendor/
+
+# Composer
+vendor/
+composer.phar
+
+# PHP
+*.phar
+
+# Ruby
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+lib/bundler/man/
+.hg
+.rbx/
+*.lock
+*.tmp
+*.old
+*.bak
+*.swp
+*~
+.project
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.cache
+.yardoc/
+_yardoc/
+.rdoc-cache
+pkg/
+spec/reports/
+test/tmp/
+test/version_tmp/
+tmp/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.Python
+env/
+venv/
+ENV/
+.venv/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.git/
+.mypy_cache/
+.pytest_cache/
+.hypothesis/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+hs_err_pid*
+replay_pid*
+
+# C#
+*.sln
+*.csproj
+*.user
+*.userosscache
+*.suo
+*.userprefs
+*.cache
+*.VC.db
+*.VC.VC.opendb
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+[Oo]ut/
+msbuild.log
+msbuild.err
+msbuild.wrn
+*.VC.db
+*.VC.VC.opendb
+
+# C++
+[Cc]makeFiles/
+[Cc]MakeCache.txt
+[Cc]onfiguration.h
+[Cc]makeCache.txt
+[Cc]onfigure-stamp
+[Dd]ebug/
+[Dd]ebugStatic/
+[Rr]elease/
+[Rr]eleaseStatic/
+[Cc]makeFiles/
+[Cc]MakeCache.txt
+[Cc]onfiguration.h
+[Cc]makecache.txt
+[Cc]onfigure-stamp
+[Mm]akefile
+[Mm]akefile.user
+[Mm]akefile.conf
+[Mm]oc/
+[Mm]oc_*.cpp
+[Mm]oc_*.h
+[Qq]t_[Mm]akefile.*
+[Qq]t_[Mm]akefile_*.cpp
+[Qq]t_[Mm]akefile_*.h
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.moc.cpp
+*.qm
+*.qrc
+*.pro.user
+*.pro.user.*
+*.prf
+*.pri
+*.moc
+*.m
