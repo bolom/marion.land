@@ -98,7 +98,7 @@ const App: React.FC = () => {
               >
                 <div className="aspect-[4/5] overflow-hidden bg-clay-light mb-6">
                   <img
-                    src="/src/assets/images/marion-portrait.png"
+                    src="/assets/images/marion-portrait.png"
                     alt="Portrait de Marion"
                     className="w-full h-full object-cover grayscale sepia-[0.1] contrast-105"
                   />
