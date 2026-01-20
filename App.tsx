@@ -101,9 +101,9 @@ const App: React.FC = () => {
                 style={{ transform: 'rotate(3deg)' }}
               >
                 <div className="aspect-[4/5] overflow-hidden bg-clay-light mb-6">
-                  <img 
-                    src="https://raw.githubusercontent.com/bolom/anais.earth/main/marion-portrait.png" 
-                    alt="Portrait de Marion" 
+                  <img
+                    src="/src/assets/images/marion-portrait.png"
+                    alt="Portrait de Marion"
                     className="w-full h-full object-cover grayscale sepia-[0.1] contrast-105"
                   />
                 </div>
