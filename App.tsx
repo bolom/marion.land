@@ -26,17 +26,13 @@ const App: React.FC = () => {
   const categories = useMemo(() => {
     if (!PROJECTS) return ['Tous'] as (Category | 'Tous')[];
     const uniqueCats = Array.from(new Set(PROJECTS.map(p => p.category)));
-    // Filtrer la catégorie BIOGRAPHIE pour ne pas l'afficher
-    const filteredCats = uniqueCats.filter(cat => cat !== Category.BIOGRAPHIE);
-    return ['Tous', ...filteredCats] as (Category | 'Tous')[];
+    return ['Tous', ...uniqueCats] as (Category | 'Tous')[];
   }, []);
 
   const filteredProjects = useMemo(() => {
     if (!PROJECTS) return [];
-    // Filtrer les projets pour exclure ceux de la catégorie BIOGRAPHIE
-    const filteredProjects = PROJECTS.filter(p => p.category !== Category.BIOGRAPHIE);
-    if (selectedCategory === 'Tous') return filteredProjects;
-    return filteredProjects.filter(p => p.category === selectedCategory);
+    if (selectedCategory === 'Tous') return PROJECTS;
+    return PROJECTS.filter(p => p.category === selectedCategory);
   }, [selectedCategory]);
 
   return (
